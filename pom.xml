@@ -45,7 +45,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <!-- ============================== -->
-        <!-- （★）apollo config             -->
+        <!-- （★）Apollo                    -->
         <!-- ============================== -->
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
