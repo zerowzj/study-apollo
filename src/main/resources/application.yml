@@ -1,0 +1,24 @@
+#
+server:
+  port: 7000
+#
+logging:
+  config: classpath:logback.xml
+#
+spring:
+  application:
+    name: study-alibaba-nacos
+  main:
+    web-application-type: servlet
+    banner-mode: off
+  #
+  profiles:
+    active: @env@
+#
+app:
+  id: ${spring.application.name}
+apollo:
+  apollo:
+    bootstrap:
+      enable: true
+  meta: http://1.1.1.1:8080
