@@ -14,11 +14,12 @@ spring:
   #
   profiles:
     active: @env@
-#
+#（★）
 app:
   id: ${spring.application.name}
 apollo:
+  meta: http://1.1.1.1:8080
   apollo:
     bootstrap:
       enable: true
-  meta: http://1.1.1.1:8080
+      namespaces: PC.datasource-mysql-config.yml
